@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <title>Dictionary App</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__options">
+        <img src="./public/assets/images/logo.svg" alt="LOGO" />
+        <select name="font" id="" class="header__select">
+          <option value="serif">Serif</option>
+          <option value="mono">Mono</option>
+          <option value="sans" selected>Sans serif</option>
+        </select>
+      </div>
+      <div class="header__interactivebtn">
+        <div class="header__interactivebtn__switch">
+          <input type="checkbox" id="switch" name="mode" />
+          <label for="switch">Toggle</label>
+        </div>
+        <img
+          src="./public/assets/images/icon-moon.svg"
+          alt="icon moon"
+          class="icon__moon"
+        />
+      </div>
+    </header>
+    <form>
+      <input
+        type="search"
+        placeholder="Search for any word..."
+        class="form__inputsearch input--active"
+      />
+      <img
+        src="./public/assets/images/icon-search.svg"
+        alt="icon search"
+        class="form__input__icon"
+        id="btn-search"
+      />
+      <span class="form__alert__text">Whoops, can't be empty</span>
+    </form>
+    <section class="searchedword__noun">
+      <div class="searchedword__noun__container">
+        <h1 class="searchedword__word">Keyboard</h1>
+        <span class="searchedword__phonetic">/ˈkiːbɔːd/</span>
+      </div>
+      <img src="./public/assets/images/icon-play.svg" alt="icon play" />
+    </section>
+    <section class="section noun">
+      <div class="section__header">
+        <h3>noun</h3>
+        <div class="e__linea"></div>
+      </div>
+      <div class="section__meaning">
+        <span class="e__apart">Meaning</span>
+        <ul class="section__meaning__list">
+          <li>
+            Noun: a device that contains keys for producing sounds when pressed.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+            facilis atque nisi dolorum aperiam eos recusandae sapiente eius
+            veritatis hic, dolore quisquam aut, facere sequi inventore commodi
+            enim, labore nulla.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            rerum voluptatum omnis corporis voluptas modi quidem beatae magni
+            repellat quo vel sapiente repudiandae, saepe ipsum rem veritatis
+            possimus dolores totam.
+          </li>
+        </ul>
+      </div>
+      <div class="section__synonums">
+        <span class="e__apart">Synonyms</span>
+        <p>electronic Keyboard</p>
+      </div>
+    </section>
+    <section class="section verb">
+      <div class="section__header">
+        <h3>verb</h3>
+        <div class="e__linea"></div>
+      </div>
+      <div class="section__meaning">
+        <span class="e__apart">Meaning</span>
+        <ul class="section__meaning__list">
+          <li>
+            a device that contains keys for producing sounds when pressed.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="section__source">
+        <span>Source</span>
+        <a href="https://en.wiktionary.org/wiki/keyboard"
+          >https://en.wiktionary.org/wiki/keyboard</a
+        >
+      </div>
+      <div>
+        <p>Coded by Critina Garcia</p>
+      </div>
+    </footer>
+    <script src="./src/js/script.js" type="module"></script>
+  </body>
+</html>
